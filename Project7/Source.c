@@ -7,7 +7,7 @@ void main()
 {
 	setlocale(LC_ALL, "RUS");
 	double x, n = 40;
-	printf("‚ўҐ¤ЁвҐ ЇҐаҐЇ ¤ ¤ ў«Ґ­Ёп(ў Ў а) >> ");
+	printf("Введите давление(в бар) >> ");
 	scanf("%lf", &x);
 	if (x < 0.5)
 	{
