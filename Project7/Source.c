@@ -5,24 +5,25 @@
 #include <locale.h>
 void main()
 {
+	setlocale(LC_ALL, "RUS");
 	double x, n = 40;
-	printf("Введите перепад давления(в бар) >> ");
+	printf("‚ўҐ¤ЁвҐ ЇҐаҐЇ ¤ ¤ ў«Ґ­Ёп(ў Ў а) >> ");
 	scanf("%lf", &x);
 	if (x < 0.5)
 	{
-		double q = pow(x-0.5, 2)/1 + 8;
-		printf("%lf", q);
+		double q = pow(x-0.5, 2) + 8; //Эквивалентно q= pow(x-0.5, 2)/1 + 8
+		printf("Q=%lf", q);
 	}
 
-	if (0.5 <= x <= 2)
+	if (x >= 0.5 && x <= 2)
 	{
-		double q = 2 * pow(x-1.25+2, 0.5) + 42;
-		printf("%lf", q);
+		double q = 2 * pow(x+0.75, 0.5) + 42; //Эквивалентно q= 2 * pow(x-1.25+2, 0.5) + 42
+		printf("Q=%lf", q);
 	}
 
-	if (x > 2)
+	if (x>2)
 	{
-		double q=3*(x-2)+60;
-		printf("%lf", q);
+		double q= 3*x + 54; //Эквивалентно q= 3*(x-2) + 60
+		printf("Q=%lf", q);
 	}
 }
