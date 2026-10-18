@@ -7,4 +7,4 @@
    Если 0.5 <= x <= 2: q = 2 * pow(x+0.75, 0.5) + 42  
    Если x > 2: q = 3*x + 54  
 4. Выводим полученное значение теплоты q
-<img width="704" height="710" alt="image" src="https://github.com/user-attachments/assets/c3a556c4-c515-47d2-8720-871f69f4d73e" />
+<img width="692" height="713" alt="image" src="https://github.com/user-attachments/assets/61842ffa-7924-47b6-a2e2-f0ba8ae30521" />
